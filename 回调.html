@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    /*function getSomething() {
+        var r = 0;
+        setTimeout(function() {
+            r = 2;
+        }, 10);
+        return r;
+    }
+
+    function compute() {
+        var x = getSomething();
+        alert(x * 2);
+    }
+    compute();*/
+    //回调函数
+    /*function getSomething2(huidiao) {
+        var r = 0;
+        setTimeout(function() {
+            r = 2;
+            huidiao(r);
+        }, 10);
+    }
+
+    function compute(x) {
+        console.log(x * 2);
+    }
+    getSomething2(compute);*/
+    //promise
+    /*function getSomething3(){
+    	var r = 0;
+    	return new Promise(function(resolve){
+    		setTimeout(function(){
+    			r = 2;
+    			resolve(r);
+    		},10);
+    	});
+    }
+    function compute(x){
+    	alert(x*2);
+    }
+    getSomething3().then(compute);*/
+    //generator
+    /*function getSomething4(){
+    	var r = 0;
+    	setTimeout(function(){
+    		r = 2;
+    		it.next(r);
+    	},10);
+    }
+    function *compute(it){
+    	var x = yield getSomething4();
+    	alert(x*2);
+    }
+    var it = compute();
+    it.next();*/
+    //promise + generator
+    /*function getSomething5(){
+    	var r = 0;
+    	return new Promise(function(resolve){
+    		setTimeout(function(){
+    			r = 2;
+    			resolve(r);
+    		},10);
+    	});
+    }
+    function *compute(){
+    	var x = yield getSomething5();
+    	alert(x*2);
+    }
+    var it = compute();
+    it.next().value.then(function(value){
+    	it.next(value);
+    });*/
+    const a = 10;
+    console.log(a);
+    </script>
+    <div id="app"></div>
+</body>
+
+</html>
