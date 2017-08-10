@@ -2,4 +2,4 @@
 
 `lyb` *热爱生活热爱人生*
 
- 1. 回调函数的各种写法
+ 1. [异步回调函数的各种写法](https://github.com/wuxiaohen/js_demo/blob/master/%E5%9B%9E%E8%B0%83.html)
