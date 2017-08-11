@@ -3,3 +3,14 @@
 `lyb` *热爱生活热爱人生*
 
  1. 回调函数的各种写法
+
+ 2. 实现数组去重的一个巧妙的思路
+
+  ```
+  const exists = {};
+  [1,2,3,1,'a',1,'a'].filter(item => {
+    if (exists[item]) return false
+    exists[item] = true
+    return true
+  })>
+  ```
